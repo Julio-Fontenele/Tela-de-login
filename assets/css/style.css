@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url(/assets/img/bg-01.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    padding: 65px 55px 54px;
+    width: 30%;
+    height: 90vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(102, 102, 102);
+    transition: all 1s;
+}
+
+.form h2{
+    text-align: center;
+    display: block;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+}
+
+.input-group input{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.label{
+    font-size: 12px;
+}
+
+.forgot-password{
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 10rem;
+    margin-bottom: 12px;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: black;
+}
+
+.forgot-password a:hover{
+    color: #9733EE;
+}
+
+.button{
+    margin: 12px;
+}
+
+.btn{
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #9733EE;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-social-media span{
+    font-size: 13px;
+}
+
+.login-social-media{
+    margin: 10px;
+}
+
+.list-social-media{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.list-social-media li{
+    font-size: 35px;
+}
+
+.list-social-media li a{
+    text-decoration: none;
+}
+
+.list-social-media li a i{
+  color: #9733EE;  
+  
+}
+
+.list-social-media li a i:hover{
+    color: #DA22FF;
+    transition: all .5s;
+    
+}
+
+.create-account a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+.create-account a:hover{
+    color: #9733EE;
+}
+
+.create-account {
+    margin: 40px;
+}
