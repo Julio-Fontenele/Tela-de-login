@@ -22,7 +22,7 @@ body{
     background-color: #fff;
     padding: 65px 55px 54px;
     width: 30%;
-    height: 90vh;
+    height: 95vh;
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(102, 102, 102);
     transition: all 1s;
@@ -55,6 +55,21 @@ body{
     border-left: none;
     border-right: none;
     outline: none;
+}
+
+.input-group i {
+    color: #9733EE;
+    position: relative;
+    bottom: 28px;
+    right: 25px;
+    display: block;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+.input-text::-webkit-input-placeholder{
+    margin-left: 10px;
+    padding-left: 18px;
 }
 
 .label{

@@ -15,11 +15,13 @@
                 <h2 class="tittle">Login</h2>
                     <div class="input-group">
                         <span class="label">Usuário</span>
-                        <input type="text" name="username" id="username" required placeholder="Digite seu nome de usuário">
+                        <input class="input-text" type="text" name="username" id="username" required placeholder="Digite seu nome de usuário">
+                        <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="input-group">
                         <span class="label">Senha</span>
-                        <input type="password" name="password" id="password" required placeholder="Digite sua senha">
+                        <input class="input-text" type="password" name="password" id="password" required placeholder="Digite sua senha">
+                        <i class="fa-solid fa-lock"></i>
                     </div>
 
                     <div class="forgot-password">
@@ -27,7 +29,7 @@
                     </div>
 
                     <div class="button">
-                        <button class="btn" type="submit">Entrar</button>
+                        <button class="btn" type="submit" onclick="logar(); return false" >Entrar</button>
                     </div>
 
                     <div class="login-social-media">
@@ -58,6 +60,24 @@
                         <a href="#">Criar uma conta</a>
                     </div>
             </form>
+
+            <script>
+
+                function logar(){
+
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+                    
+                    if (username == "admin" && password == "12345") {
+                        alert('Sucesso');
+                        location.href = "home.html"
+                    }  else{
+                        alert('Usuário ou senha incorreto')
+                    }  
+                }
+            </script>
+
+
         </div>
     </div>
 </body>
